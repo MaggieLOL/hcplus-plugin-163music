@@ -17,6 +17,7 @@ function neteaseHook(...args){
         rawel.innerHTML=parsed
     }
     setTimeout(scrollToEnd,200);
+    return args
 }
 
 
