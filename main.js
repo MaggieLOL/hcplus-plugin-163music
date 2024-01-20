@@ -10,7 +10,7 @@ function resolveNetease(text){
 function scrollToEnd(){
     window.scrollTo(0,document.body.scrollHeight);
 }
-function neteaseHook(...args){
+function neteaseHook(args){
     var rawel = args[0];
     var parsed=resolveNetease(rawel.innerHTML);
     if(!!parsed){
