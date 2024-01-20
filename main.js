@@ -11,7 +11,7 @@ function scrollToEnd(){
     window.scrollTo(0,document.body.scrollHeight);
 }
 function neteaseHook(...args){
-    var rawel = args[0][0].childNodes[2];
+    var rawel = args[0].querySelector("p");
     var parsed=resolveNetease(rawel.innerText);
     if(!!parsed){
         rawel.innerHTML=parsed
